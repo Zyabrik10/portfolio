@@ -1,0 +1,24 @@
+@import url("./reset-normolize.css");
+@import url("./global.css");
+@import url("./header.css");
+@import url("./stack.css");
+@import url("./projects.css");
+
+.hero {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.hero > .container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.about-p:not(:last-child){
+  margin-bottom: 15px;
+}

@@ -1,0 +1,19 @@
+.projects-list{
+    --flex-items: 1;
+}
+
+@media screen and (min-width: 600px){
+    .projects-list{
+        --flex-items: 2;
+    }
+}
+
+@media screen and (min-width: 1000px){
+    .projects-list{
+        --flex-items: 3;
+    }
+}
+
+.projects-list img{
+    width: 100%;
+}

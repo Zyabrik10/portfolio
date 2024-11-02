@@ -1,0 +1,70 @@
+html{
+  --color-1: rgb(0, 0, 0);
+  --color-2: hsl(208, 100%, 100%);
+  --color-3: rgb(191, 20, 54);
+}
+
+* {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--color-3);
+}
+
+body {
+  background: var(--color-1);
+  color: var(--color-2);
+}
+
+.flex-container {
+  --flex-items: 3;
+  --flex-items-gap: 25px;
+
+  display: flex;
+  gap: var(--flex-items-gap);
+  flex-wrap: wrap;
+}
+
+.flex-container > * {
+  flex-basis: calc(
+    (100% - (var(--flex-items) - 1) * var(--flex-items-gap)) / var(--flex-items)
+  );
+}
+
+.container {
+  width: 100%;
+  max-width: 370px;
+  padding: 10px;
+
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 600px){
+.container {
+  max-width: 600px;
+}
+}
+
+@media screen and (min-width: 1000px){
+ .container {
+    max-width: 1000px;
+  } 
+}
+
+.section{
+    padding: 40px 0;
+}

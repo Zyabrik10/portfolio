@@ -1,0 +1,34 @@
+.stack-list{
+  --flex-items: 4;
+  --flex-items-gap: 5px;
+}
+
+@media screen and (min-width: 600px){
+  .stack-list{
+    --flex-items: 8;
+  }
+}
+
+.stack-list li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stack-list svg{
+    --size: 60px;
+    width: var(--size);
+    height: var(--size);
+}
+
+@media screen and (min-width: 600px){
+  .stack-list svg{
+    --size: 80px;
+  }
+}
+
+@media screen and (min-width: 1000px){
+  .stack-list svg{
+    --size: 100px;
+  }
+}
